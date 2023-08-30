@@ -35,7 +35,7 @@ then
     # 退出码 1 Sensu会warning
     exit 1
 else
-    rm -rf $file_path
+    # rm -rf $file_path
     exit 0
 fi
 
