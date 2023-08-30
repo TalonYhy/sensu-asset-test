@@ -1,6 +1,10 @@
 #!/bin/bash
 
 file_path="/tmp/sensu/final_log.txt"
+if [ ! -e "$file_path" ]; then
+  echo "文件不存在"
+  exit 0
+fi
 # 读取txt文件的第一行
 read -r line < $file_path
 
